@@ -43,6 +43,7 @@ It captures the reusable workflow and style conventions to follow when helping w
 - Prefer explicit, readable steps over dense one-liners when the code is meant to explain something.
 - Keep code blocks visually simple and linear, with one obvious task per block.
 - Prefer direct notebook-style code over abstract helper functions unless reuse is clearly beneficial.
+- Use a leading underscore for internal helper functions that are not part of the main public flow, so their purpose is clearly scoped as private or supporting logic.
 - Use short section comments like `# Libraries`, `# Get Data`, `# About`, `# Fit`, `# Predict`, and `# Model diagnostic` to organize the flow.
 - Keep setup code at the top of the notebook, then move through data loading, summary, modeling, and interpretation in order.
 - Prefer clear, descriptive variable names that show the role of the object in the analysis.
@@ -55,6 +56,7 @@ It captures the reusable workflow and style conventions to follow when helping w
 - Use `.dropna(how="any")` explicitly when removing incomplete rows before modeling.
 - Use `.query(...)` when it reads more clearly than a long boolean mask.
 - Use `.assign(...)` when adding derived columns that should stay in the dataframe pipeline.
+- When using `.merge(...)` or similar dataframe methods, prefer spaced keyword arguments like `on = "..."`, `how = "left"`, and `validate = "m:1"` most of the time.
 - Use `lambda df:` inside `assign` when the new value depends on the current dataframe.
 - Use `np.where(...)` when you need a compact conditional transformation in a dataframe pipeline.
 - Keep `assign` calls readable by keeping the new column name and expression aligned on separate lines when needed.

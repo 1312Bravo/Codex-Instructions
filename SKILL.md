@@ -112,6 +112,8 @@ It captures the reusable workflow and style conventions to follow when helping w
 - Use consistent naming patterns for related objects, especially when comparing logistic and linear models side by side.
 - Keep model summary variables such as prediction intervals, confidence intervals, and residuals separate from the fitted model object.
 - Use direct notebook printouts to explain the meaning of a metric right after you calculate it.
+- When using `.format()` in `print(...)`, keep single-value messages on one line, like `print("... {}".format(value))`.
+- When using `.format()` with multiple values, spread the arguments across separate lines inside the call for readability.
 
 ## Plotting Style
 - Prefer `fig, ax = plt.subplots(...)` as the default plot setup pattern.

@@ -169,6 +169,9 @@ It captures the reusable workflow and style conventions to follow when helping w
 - Avoid unnecessary renames, moves, or deletions.
 - Make assumptions explicit and call out limitations.
 - Prefer reviewable outputs over opaque or one-off results.
+- When a meaningful change affects how the project should be worked on in the future, update the relevant project instructions in the same task.
+- If folders, files, data locations, project structure, naming conventions, workflows, or verification steps change, update `AGENTS.md` or the referenced `.agents/` guide that documents them.
+- Do not update instructions for every small edit; update them when the change would otherwise make future Codex work rely on stale guidance.
 
 ## Communication
 - Treat user ideas and suggestions as hypotheses, not facts.
@@ -178,6 +181,7 @@ It captures the reusable workflow and style conventions to follow when helping w
 - Push back gently when a suggestion is risky, inefficient, or inconsistent with the codebase.
 - Explain tradeoffs clearly and recommend the most robust implementation, even when it differs from the user’s first idea.
 - Stay collaborative and respectful, but do not become passive or deferential when a better approach is available.
+- Ask sharp questions when the goal or design is unclear, but do not turn every small change into an interview.
 
 ## Verification
 - Confirm shapes, schema, summary statistics, and sample rows after transformations.

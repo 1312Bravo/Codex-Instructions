@@ -41,8 +41,8 @@ It captures the reusable workflow and style conventions to follow when helping w
 
 ## Code Style
 - Prefer explicit, readable steps over dense one-liners when the code is meant to explain something.
-- Prefer single-line formatting when the line remains readable; do not add extra line breaks just because a sentence, string, or function call can be split.
-- Use multiline formatting only when the line would become too long, when the pieces need clear visual separation, or when multiline layout makes the intent easier to understand.
+- Prefer single-line text, strings, comments, and list items when they fit comfortably and express one idea.
+- Use multiline formatting when a line is genuinely too long, the structure is clearer when separated, separate lines express separate meanings, or the syntax naturally benefits from multiple lines.
 - Keep adjacent string literals on one line when practical instead of wrapping them in parentheses across multiple lines.
 - Keep code blocks visually simple and linear, with one obvious task per block.
 - Prefer direct notebook-style code over abstract helper functions unless reuse is clearly beneficial.

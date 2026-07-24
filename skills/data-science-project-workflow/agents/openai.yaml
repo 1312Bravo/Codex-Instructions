@@ -1,0 +1,7 @@
+interface:
+  display_name: "Data Science Project Workflow"
+  short_description: "Reusable data science workflow"
+  default_prompt: "Use $data-science-project-workflow to guide this analysis with clear workflow, dataframe style, validation, and readable outputs."
+
+policy:
+  allow_implicit_invocation: true

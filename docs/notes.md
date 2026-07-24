@@ -1,6 +1,14 @@
 # Notes About Codex Instructions, AGENTS.md, SKILL.md, Skills, And skills.sh
 
-Last updated: 2026-07-05
+Last updated: 2026-07-24
+
+## Current Repo Layout
+
+- Root `AGENTS.md` is for maintaining this instruction repository.
+- Reusable skills live under `skills/<skill-name>/`.
+- Helper scripts live under `scripts/`.
+- Supporting notes live under `docs/`.
+- Do not keep reusable skill content as a loose top-level `SKILL.md` in this repo.
 
 ## Short Version
 
@@ -15,8 +23,8 @@ Last updated: 2026-07-05
 For my own workflow:
 
 - Use `AGENTS.md` to tell Codex how to behave in this specific repository.
-- Use `SKILL.md` to capture reusable preferences, such as my data science notebook style, dataframe formatting, plotting style, and collaboration preferences.
-- Use a sync script when I want to copy the current instruction files into another project.
+- Use packaged skills under `skills/` to capture reusable preferences, such as data science notebook style, dataframe formatting, plotting style, collaboration preferences, or vibe-coding workflows.
+- Use the install script when I want to copy packaged skills into the local Codex skills folder.
 
 ## Mental Model
 

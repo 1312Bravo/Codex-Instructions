@@ -1,0 +1,7 @@
+interface:
+  display_name: "Vibecode App Builder"
+  short_description: "Collaborative app building workflow"
+  default_prompt: "Use $vibecode-app-builder to build this app with product notes, docs, readable code, and decision checkpoints."
+
+policy:
+  allow_implicit_invocation: true

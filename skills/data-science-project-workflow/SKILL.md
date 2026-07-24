@@ -1,7 +1,9 @@
-# SKILL.md
+---
+name: data-science-project-workflow
+description: Use when working on data science projects, notebooks, scripts, datasets, dataframe pipelines, modeling, evaluation, plots, tables, and reproducible analysis outputs with clear workflow and readable code conventions.
+---
 
-## Skill Name
-Data Science Project Workflow
+# Data Science Project Workflow
 
 ## Purpose
 Use this skill when working on data science tasks in this folder, including notebooks, scripts, datasets, models, and analysis outputs.

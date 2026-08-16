@@ -46,6 +46,19 @@ It captures the reusable workflow and style conventions to follow when helping w
 - Prefer single-line text, strings, comments, and list items when they fit comfortably and express one idea.
 - Use multiline formatting when a line is genuinely too long, the structure is clearer when separated, separate lines express separate meanings, or the syntax naturally benefits from multiple lines.
 - Keep adjacent string literals on one line when practical instead of wrapping them in parentheses across multiple lines.
+- For Python code, organize larger files or notebooks with clear section dividers:
+
+```python
+# ----------------------------------------------------------
+# Section Title / Short Summary
+# ----------------------------------------------------------
+```
+
+- For Python functions, prefer short comments above the function explaining what it does, the main steps, and what it returns.
+- Use common sense with spacing around function comments: put a single-line helper comment directly above the function, and use a blank line after a multi-line description block only when it improves readability.
+- Add blank lines inside functions only when they separate meaningful steps; keep tiny helpers compact.
+- Do not use docstring blocks for these casual function explanations unless a real public API docstring is useful.
+- Inside Python functions, add short comments for important logic blocks, such as `# Calculate aggregates across years`.
 - Keep code blocks visually simple and linear, with one obvious task per block.
 - Prefer direct notebook-style code over abstract helper functions unless reuse is clearly beneficial.
 - Use a leading underscore for internal helper functions that are not part of the main public flow, so their purpose is clearly scoped as private or supporting logic.
@@ -187,6 +200,9 @@ It captures the reusable workflow and style conventions to follow when helping w
 - Explain tradeoffs clearly and recommend the most robust implementation, even when it differs from the user’s first idea.
 - Stay collaborative and respectful, but do not become passive or deferential when a better approach is available.
 - Ask sharp questions when the goal or design is unclear, but do not turn every small change into an interview.
+- Treat exploratory thoughts, design discussions, and unclear analysis directions as conversation-first, not as automatic permission to edit code.
+- Before implementing ambiguous work, briefly summarize the goal, the likely files or notebooks affected, and the concrete plan, then ask whether to start making the changes.
+- When the user clearly asks for implementation, proceed decisively and avoid turning every small edit into a confirmation loop.
 
 ## Verification
 - Confirm shapes, schema, summary statistics, and sample rows after transformations.

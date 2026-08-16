@@ -38,6 +38,8 @@ Keep code easy for the user to inspect and edit later.
 - Keep comments balanced: enough to orient the user, but not line-by-line noise.
 - Prefer single-line text, strings, comments, and list items when they fit comfortably and express one idea.
 - Use multiline formatting when a line is genuinely too long, separate lines express separate meanings, or the syntax is clearer that way.
+- When importing many names from the same package or module, use a parenthesized multi-line import with one imported name per line and trailing commas.
+- Keep same-module imports on one line only when there are few names and the line stays easy to scan.
 - For Python code, organize larger files with clear section dividers:
 
 ```python

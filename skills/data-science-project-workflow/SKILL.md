@@ -46,6 +46,8 @@ It captures the reusable workflow and style conventions to follow when helping w
 - Prefer single-line text, strings, comments, and list items when they fit comfortably and express one idea.
 - Use multiline formatting when a line is genuinely too long, the structure is clearer when separated, separate lines express separate meanings, or the syntax naturally benefits from multiple lines.
 - Keep adjacent string literals on one line when practical instead of wrapping them in parentheses across multiple lines.
+- When importing many names from the same package or module, use a parenthesized multi-line import with one imported name per line and trailing commas.
+- Keep same-module imports on one line only when there are few names and the line stays easy to scan.
 - For Python code, organize larger files or notebooks with clear section dividers:
 
 ```python

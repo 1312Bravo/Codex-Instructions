@@ -24,6 +24,62 @@ Sources:
 - Use `GPT-5.4` when you want capable professional work at lower cost than 5.5/Sol.
 - Use `GPT-5.4 mini` for well-scoped coding, subagents, repeated tasks, and cost-sensitive workflows.
 
+## Quick Decision By Task
+
+| Task | Recommended Model | Effort | Why |
+| --- | --- | --- | --- |
+| Casual brainstorming, not code-related | `GPT-5.6 Terra` | `medium` | Best balance for useful ideas, structure, and judgment without overpaying for Sol. |
+| Deep brainstorming, strategy, or important life/project decisions | `GPT-5.6 Sol` | `high` | Better for ambiguity, tradeoffs, critique, and seeing around corners. |
+| Fast idea generation where quality is not critical | `GPT-5.6 Luna` | `low` | Cheap and fast for many rough ideas, names, lists, variations, and first drafts. |
+| Writing, rewriting, tone, portfolio text, blog text | `GPT-5.6 Terra` | `medium` | Strong default for quality writing, structure, and voice. |
+| Important final writing or sensitive messaging | `GPT-5.6 Sol` | `high` | Better when nuance, precision, and judgment matter more than speed. |
+| Simple app prototype | `GPT-5.6 Terra` | `medium` | Good balance for implementation, product sense, and not making the code weird. |
+| Very simple app or tiny UI change | `GPT-5.6 Luna` | `low` | Good enough when the task is narrow and clearly described. |
+| Frontend design, layout, visual hierarchy | `GPT-5.6 Sol` | `high` | Official guidance says GPT-5.6 improves frontend aesthetics; use Sol when design quality matters. |
+| Normal coding help | `GPT-5.6 Terra` | `medium` | Best everyday coding default. |
+| Small, clear code edit | `GPT-5.6 Luna` or `GPT-5.4 mini` | `low` | Use cheaper/faster models when the edit is obvious and low-risk. |
+| Hard debugging | `GPT-5.6 Sol` | `high` or `xhigh` | Debugging needs deeper reasoning and careful hypothesis testing. |
+| Code review | `GPT-5.6 Terra` | `high` | Good default for finding issues without always using Sol. Use Sol for important or complex reviews. |
+| Architecture or multi-file refactor planning | `GPT-5.6 Sol` | `high` | Better for system-level consequences, hidden dependencies, and long-term structure. |
+| Data science notebook work | `GPT-5.6 Terra` | `medium` | Strong default for analysis, transformations, modeling, plots, and interpretation. |
+| Hard data reasoning or model interpretation | `GPT-5.6 Sol` | `high` or `xhigh` | Use when the conclusion matters or the analysis has many traps. |
+| Summaries, extraction, cleanup, formatting | `GPT-5.6 Luna` | `none` or `low` | Keep cheap tasks cheap. |
+| Subagents or helper agents | `GPT-5.4 mini` or `GPT-5.6 Luna` | `low` | Good for narrow inspection, summarization, and repetitive support work. |
+| Final answer after lots of work | `GPT-5.6 Terra` or `GPT-5.6 Sol` | `medium` or `high` | Use Terra for normal final summaries and Sol when quality or nuance matters. |
+
+## Quick Defaults For Me
+
+- Brainstorming: start with `GPT-5.6 Terra`, `effort = medium`.
+- Brainstorming where the direction really matters: use `GPT-5.6 Sol`, `effort = high`.
+- Simple apps: use `GPT-5.6 Terra`, `effort = medium`.
+- Tiny app edits: use `GPT-5.6 Luna`, `effort = low`.
+- Normal code: use `GPT-5.6 Terra`, `effort = medium`.
+- Hard code/debugging/architecture: use `GPT-5.6 Sol`, `effort = high`.
+- Cheap helper work: use `GPT-5.6 Luna` or `GPT-5.4 mini`, `effort = low`.
+
+## Cost Overview
+
+Prices below are from official OpenAI model pages, checked on 2026-08-16. Treat them as working notes and re-check official pricing before making product or budget decisions.
+
+| Model | Input / 1M tokens | Cached Input / 1M tokens | Output / 1M tokens | Cost Position |
+| --- | --- | --- | --- | --- |
+| `GPT-5.4 mini` | `$0.75` | `$0.075` | `$4.50` | Cheapest listed option here |
+| `GPT-5.6 Luna` | `$1.00` | `$0.10` | `$6.00` | Cheap 5.6-family option |
+| `GPT-5.4` | `$2.50` | `$0.25` | `$15.00` | Mid-tier |
+| `GPT-5.6 Terra` | `$2.50` | `$0.25` | `$15.00` | Mid-tier and usually best balanced default |
+| `GPT-5.5` | `$5.00` | `$0.50` | `$30.00` | Expensive frontier tier |
+| `GPT-5.6 Sol` | `$5.00` | `$0.50` | `$30.00` | Expensive frontier tier |
+
+Practical cost notes:
+
+- Output tokens are much more expensive than input tokens, so long answers cost more than long prompts.
+- Higher effort can increase reasoning tokens, latency, and cost, so do not use `high`, `xhigh`, or `max` by default.
+- For many small helper tasks, use `GPT-5.4 mini` or `GPT-5.6 Luna`.
+- For normal work, `GPT-5.6 Terra` often gives the best quality/cost balance.
+- For hard work, paying for `GPT-5.6 Sol` can be cheaper overall if it avoids wasted time, bad code, or repeated attempts.
+- For high-volume workflows, test the cheapest model that passes quality checks instead of guessing.
+- For prompts above 272K input tokens, some model pages mention higher pricing for the full request, so long-context jobs need extra cost attention.
+
 ## Model Overview
 
 | Model | Practical Role | Best For | Avoid When |

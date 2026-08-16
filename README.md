@@ -12,6 +12,7 @@ This repository stores reusable Codex instruction assets.
 ## Skills
 
 - `skills/data-science-project-workflow/` - reusable data science workflow and style guidance
+- `skills/plan-md-workflow/` - temporary PLAN.md workflow for brainstorming, planning, decisions, progress, and cleanup
 - `skills/vibecode-app-builder/` - reusable collaborative app-building workflow
 
 ## Notes

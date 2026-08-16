@@ -83,6 +83,8 @@ python "C:\Users\Urh\Desktop\Urh\Github Repositories\Codex-Instructions\scripts\
 
 `data-science-project-workflow` stores reusable data science, notebook, dataframe, plotting, and analysis workflow guidance.
 
+`plan-md-workflow` stores the temporary PLAN.md workflow for brainstorming, constructive review, evolving decisions, progress tracking, and end-of-plan cleanup.
+
 `vibecode-app-builder` stores reusable collaborative app-building guidance, including notes, docs, prompts, readable code, decision checkpoints, and cleanup habits.
 
 ## Mental Model

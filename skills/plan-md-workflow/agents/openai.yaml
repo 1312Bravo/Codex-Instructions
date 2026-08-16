@@ -1,0 +1,7 @@
+interface:
+  display_name: "PLAN.md Workflow"
+  short_description: "Maintain temporary project plans"
+  default_prompt: "Use $plan-md-workflow to create or maintain a temporary PLAN.md while we shape ideas, evaluate direction, track decisions, and close the plan cleanly."
+
+policy:
+  allow_implicit_invocation: true

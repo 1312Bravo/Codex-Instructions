@@ -189,6 +189,9 @@ It captures the reusable workflow and style conventions to follow when helping w
 - Avoid unnecessary renames, moves, or deletions.
 - Make assumptions explicit and call out limitations.
 - Prefer reviewable outputs over opaque or one-off results.
+- After finishing a meaningful block of work, review the result before stopping: check whether anything is too much, missing, duplicated, unclear, misplaced, or should be lightly refactored.
+- Make reasonable cleanup/refactor adjustments immediately when they are clearly within the requested scope and improve readability, reproducibility, or maintainability.
+- Do not use the review pass as permission for unrelated rewrites, broad restructuring, or risky interpretation changes that should be discussed first.
 - When a meaningful change affects how the project should be worked on in the future, update the relevant project instructions in the same task.
 - If folders, files, data locations, project structure, naming conventions, workflows, or verification steps change, update `AGENTS.md` or the referenced `.agents/` guide that documents them.
 - Do not update instructions for every small edit; update them when the change would otherwise make future Codex work rely on stale guidance.

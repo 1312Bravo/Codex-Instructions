@@ -58,6 +58,9 @@ Keep code easy for the user to inspect and edit later.
 
 From time to time, do a small cleanup pass before mess accumulates.
 
+- After finishing a meaningful block of work, review the result before stopping: check whether anything is too much, missing, duplicated, awkwardly placed, or should be lightly refactored.
+- Make reasonable cleanup/refactor adjustments immediately when they are clearly within the requested scope and reduce future mess.
+- Do not use the review pass as permission for unrelated rewrites, broad redesigns, or risky changes that should be discussed first.
 - Remove temporary prototypes once the direction is clear.
 - Move repeated behavior into simple helpers when it improves readability.
 - Keep generated files, logs, virtual environments, build outputs, and secrets out of source control.

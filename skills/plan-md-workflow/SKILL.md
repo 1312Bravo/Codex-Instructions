@@ -91,6 +91,8 @@ Keep the structure lighter for small plans and more detailed for large plans.
 
 - Update `PLAN.md` as the conversation evolves, especially when goals, decisions, scope, priorities, or completed tasks change.
 - Do not update the file after every minor sentence; update it after meaningful decisions or progress.
+- After finishing a meaningful block of work, review the plan before stopping: check whether it is too broad, missing something important, stale, duplicated, or needs a small cleanup.
+- Adjust `PLAN.md` immediately when the review shows the active plan no longer matches the work or the best next steps.
 - When a task is completed, check it off or move it into `Progress`.
 - When the user changes direction, preserve the relevant history briefly, but keep the active plan focused.
 - If the plan becomes stale or too long, do a cleanup pass so it remains useful.
